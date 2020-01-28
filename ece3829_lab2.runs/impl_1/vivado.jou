@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2019.2 (64-bit)
+# SW Build 2700185 on Thu Oct 24 18:46:05 MDT 2019
+# IP Build 2699827 on Thu Oct 24 21:16:38 MDT 2019
+# Start of session at: Tue Jan 28 18:25:12 2020
+# Process ID: 21680
+# Current directory: C:/Users/Jeffrey Huang/Documents/WPI/2019-2020/C term/ECE3829/ece3829_lab2/ece3829_lab2.runs/impl_1
+# Command line: vivado.exe -log lab2_top.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source lab2_top.tcl -notrace
+# Log file: C:/Users/Jeffrey Huang/Documents/WPI/2019-2020/C term/ECE3829/ece3829_lab2/ece3829_lab2.runs/impl_1/lab2_top.vdi
+# Journal file: C:/Users/Jeffrey Huang/Documents/WPI/2019-2020/C term/ECE3829/ece3829_lab2/ece3829_lab2.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source lab2_top.tcl -notrace
