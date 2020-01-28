@@ -27,16 +27,17 @@ module seven_seg(
     input [15:0] in,
     input clk,
     output [6:0] seg,
-    output reg [3:0] an);
+    output [3:0] an);
     
     wire[1:0] counter_out;
     wire[3:0] in_sel;
     
     my_counter m0(clk, counter_out);
     decoder2to4 m1(counter_out, an);
-    assign in_sel = (counter_out==2'b0)?in[3:0]:
-        (counter_out==2'b1)?in[7:4]:
-        (counter_out==2'b0)?in[11:8]:
+    assign in_sel = (counter_out==2'b00)?in[3:0]:
+        (counter_out==2'b01)?in[7:4]:
+        (counter_out==2'b10)?in[11:8]:
         in[15:12];
+    
     bcd7seg m2(in_sel,seg);
 endmodule
