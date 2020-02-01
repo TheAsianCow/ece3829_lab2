@@ -36,14 +36,12 @@ module lab2_top(
     output cs
     );
     
+    localparam seven_seg_freq = 125000; //200Hz
+    localparam data_freq = 1250000;//20Hz
     wire clk_out;
-    wire slowclk;
-//    wire led;
-//    wire [10:0] x;
-//    wire [10:0] y;
-//    wire blank;
-    
-    wire [8:0]lightdata;
+    wire seven_seg_clk;
+    wire data_clk;
+    wire [8:0]light_data;
     
     clk_wiz_0 mmcm_inst(
     // Clock out ports
@@ -55,11 +53,13 @@ module lab2_top(
     .clk_in1(clk));      // input clk_in1
     
     //displaying seven seg
-    slowclock u0(clk, slowclk);
+    slowclock u0(clk_out, seven_seg_freq, seven_seg_clk);
     seven_seg u1(sw,slowclk,seg,an);
     
     vhdl_display D1(sw, clk_out, reset, Hsync, Vsync, vgaRed, vgaGreen, vgaBlue);
     
     adc_sclk u2(.clk_in(clk_out),.reset(reset),.clk_out(sclk));
+    slowclock u3(clk_out, data_freq, data_clk);
+    shift_register u4(data_clk, sdo, light_data);
     
 endmodule

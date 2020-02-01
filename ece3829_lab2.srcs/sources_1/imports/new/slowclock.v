@@ -20,11 +20,13 @@
 //////////////////////////////////////////////////////////////////////////////////
 
 
-module slowclock (input clk_in,
- output reg clk_out);
+module slowclock (
+    input clk_in,
+    input freq,
+    output reg clk_out);
     reg [20:0] period_count = 0;
     always @ (posedge clk_in)
-        if (period_count!= 500000 - 1)
+        if (period_count!= freq - 1)
             begin
             period_count<= period_count + 1;
             clk_out <= 0; //clk_out gets 0.
