@@ -1,0 +1,410 @@
+#-----------------------------------------------------------
+# Vivado v2019.2 (64-bit)
+# SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+# IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+# Start of session at: Sat Feb  1 17:49:16 2020
+# Process ID: 880
+# Current directory: C:/Users/alyss/Documents/GitHub/ece3829_lab2/ece3829_lab2.runs/synth_1
+# Command line: vivado.exe -log lab2_top.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source lab2_top.tcl
+# Log file: C:/Users/alyss/Documents/GitHub/ece3829_lab2/ece3829_lab2.runs/synth_1/lab2_top.vds
+# Journal file: C:/Users/alyss/Documents/GitHub/ece3829_lab2/ece3829_lab2.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source lab2_top.tcl -notrace
+Command: synth_design -top lab2_top -part xc7a35tcpg236-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 17860 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 845.598 ; gain = 233.938
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'lab2_top' [C:/Users/alyss/Documents/GitHub/ece3829_lab2/ece3829_lab2.srcs/sources_1/new/lab2_top.v:23]
+	Parameter seven_seg_freq bound to: 125000 - type: integer 
+	Parameter data_freq bound to: 1250000 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'clk_wiz_0' [C:/Users/alyss/Documents/GitHub/ece3829_lab2/ece3829_lab2.runs/synth_1/.Xil/Vivado-880-ALYSSAUNGERER/realtime/clk_wiz_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'clk_wiz_0' (1#1) [C:/Users/alyss/Documents/GitHub/ece3829_lab2/ece3829_lab2.runs/synth_1/.Xil/Vivado-880-ALYSSAUNGERER/realtime/clk_wiz_0_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'slowclock' [C:/Users/alyss/Documents/GitHub/ece3829_lab2/ece3829_lab2.srcs/sources_1/imports/new/slowclock.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'slowclock' (2#1) [C:/Users/alyss/Documents/GitHub/ece3829_lab2/ece3829_lab2.srcs/sources_1/imports/new/slowclock.v:23]
+INFO: [Synth 8-6157] synthesizing module 'seven_seg' [C:/Users/alyss/Documents/GitHub/ece3829_lab2/ece3829_lab2.srcs/sources_1/imports/sources_1/new/seven_seg.v:26]
+INFO: [Synth 8-6157] synthesizing module 'my_counter' [C:/Users/alyss/Documents/GitHub/ece3829_lab2/ece3829_lab2.srcs/sources_1/imports/new/my_counter.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'my_counter' (3#1) [C:/Users/alyss/Documents/GitHub/ece3829_lab2/ece3829_lab2.srcs/sources_1/imports/new/my_counter.v:23]
+INFO: [Synth 8-6157] synthesizing module 'decoder2to4' [C:/Users/alyss/Documents/GitHub/ece3829_lab2/ece3829_lab2.srcs/sources_1/imports/new/decoder2to4.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'decoder2to4' (4#1) [C:/Users/alyss/Documents/GitHub/ece3829_lab2/ece3829_lab2.srcs/sources_1/imports/new/decoder2to4.v:23]
+INFO: [Synth 8-6157] synthesizing module 'bcd7seg' [C:/Users/alyss/Documents/GitHub/ece3829_lab2/ece3829_lab2.srcs/sources_1/imports/sources_1/imports/new/bcd7seg.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'bcd7seg' (5#1) [C:/Users/alyss/Documents/GitHub/ece3829_lab2/ece3829_lab2.srcs/sources_1/imports/sources_1/imports/new/bcd7seg.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'seven_seg' (6#1) [C:/Users/alyss/Documents/GitHub/ece3829_lab2/ece3829_lab2.srcs/sources_1/imports/sources_1/new/seven_seg.v:26]
+INFO: [Synth 8-6157] synthesizing module 'vhdl_display' [C:/Users/alyss/Documents/GitHub/ece3829_lab2/ece3829_lab2.srcs/sources_1/new/vhdl_display.v:23]
+	Parameter S0 bound to: 0 - type: integer 
+	Parameter S1 bound to: 1 - type: integer 
+	Parameter S2 bound to: 2 - type: integer 
+	Parameter S3 bound to: 3 - type: integer 
+	Parameter S4 bound to: 4 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'vga_controller_640_60' [C:/Users/alyss/Documents/GitHub/ece3829_lab2/ece3829_lab2.srcs/sources_1/imports/ECE3829/vga_controller_640_60.vhd:88]
+INFO: [Synth 8-256] done synthesizing module 'vga_controller_640_60' (7#1) [C:/Users/alyss/Documents/GitHub/ece3829_lab2/ece3829_lab2.srcs/sources_1/imports/ECE3829/vga_controller_640_60.vhd:88]
+WARNING: [Synth 8-567] referenced signal 'blank' should be on the sensitivity list [C:/Users/alyss/Documents/GitHub/ece3829_lab2/ece3829_lab2.srcs/sources_1/new/vhdl_display.v:67]
+WARNING: [Synth 8-567] referenced signal 'y' should be on the sensitivity list [C:/Users/alyss/Documents/GitHub/ece3829_lab2/ece3829_lab2.srcs/sources_1/new/vhdl_display.v:67]
+WARNING: [Synth 8-567] referenced signal 'x' should be on the sensitivity list [C:/Users/alyss/Documents/GitHub/ece3829_lab2/ece3829_lab2.srcs/sources_1/new/vhdl_display.v:67]
+INFO: [Synth 8-6155] done synthesizing module 'vhdl_display' (8#1) [C:/Users/alyss/Documents/GitHub/ece3829_lab2/ece3829_lab2.srcs/sources_1/new/vhdl_display.v:23]
+INFO: [Synth 8-6157] synthesizing module 'adc_sclk' [C:/Users/alyss/Documents/GitHub/ece3829_lab2/ece3829_lab2.srcs/sources_1/new/adc_sclk.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'adc_sclk' (9#1) [C:/Users/alyss/Documents/GitHub/ece3829_lab2/ece3829_lab2.srcs/sources_1/new/adc_sclk.v:23]
+INFO: [Synth 8-6157] synthesizing module 'shift_register' [C:/Users/alyss/Documents/GitHub/ece3829_lab2/ece3829_lab2.srcs/sources_1/new/shift_register.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'shift_register' (10#1) [C:/Users/alyss/Documents/GitHub/ece3829_lab2/ece3829_lab2.srcs/sources_1/new/shift_register.v:23]
+WARNING: [Synth 8-689] width (9) of port connection 'lightdata' does not match port width (8) of module 'shift_register' [C:/Users/alyss/Documents/GitHub/ece3829_lab2/ece3829_lab2.srcs/sources_1/new/lab2_top.v:63]
+WARNING: [Synth 8-3848] Net cs in module/entity lab2_top does not have driver. [C:/Users/alyss/Documents/GitHub/ece3829_lab2/ece3829_lab2.srcs/sources_1/new/lab2_top.v:36]
+INFO: [Synth 8-6155] done synthesizing module 'lab2_top' (11#1) [C:/Users/alyss/Documents/GitHub/ece3829_lab2/ece3829_lab2.srcs/sources_1/new/lab2_top.v:23]
+WARNING: [Synth 8-3331] design vhdl_display has unconnected port sw[15]
+WARNING: [Synth 8-3331] design vhdl_display has unconnected port sw[14]
+WARNING: [Synth 8-3331] design vhdl_display has unconnected port sw[13]
+WARNING: [Synth 8-3331] design vhdl_display has unconnected port sw[12]
+WARNING: [Synth 8-3331] design vhdl_display has unconnected port sw[11]
+WARNING: [Synth 8-3331] design vhdl_display has unconnected port sw[10]
+WARNING: [Synth 8-3331] design vhdl_display has unconnected port sw[9]
+WARNING: [Synth 8-3331] design vhdl_display has unconnected port sw[8]
+WARNING: [Synth 8-3331] design vhdl_display has unconnected port sw[7]
+WARNING: [Synth 8-3331] design vhdl_display has unconnected port sw[6]
+WARNING: [Synth 8-3331] design vhdl_display has unconnected port sw[5]
+WARNING: [Synth 8-3331] design vhdl_display has unconnected port sw[4]
+WARNING: [Synth 8-3331] design lab2_top has unconnected port cs
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 919.281 ; gain = 307.621
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 919.281 ; gain = 307.621
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 919.281 ; gain = 307.621
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 919.281 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [c:/Users/alyss/Documents/GitHub/ece3829_lab2/ece3829_lab2.srcs/sources_1/ip/clk_wiz_0_1/clk_wiz_0/clk_wiz_0_in_context.xdc] for cell 'mmcm_inst'
+Finished Parsing XDC File [c:/Users/alyss/Documents/GitHub/ece3829_lab2/ece3829_lab2.srcs/sources_1/ip/clk_wiz_0_1/clk_wiz_0/clk_wiz_0_in_context.xdc] for cell 'mmcm_inst'
+Parsing XDC File [C:/Users/alyss/Documents/GitHub/ece3829_lab2/ece3829_lab2.srcs/constrs_1/imports/new/seven_seg.xdc]
+WARNING: [Vivado 12-584] No ports matched 'JC[1]'. [C:/Users/alyss/Documents/GitHub/ece3829_lab2/ece3829_lab2.srcs/constrs_1/imports/new/seven_seg.xdc:151]
+WARNING: [Vivado 12-584] No ports matched 'JC[1]'. [C:/Users/alyss/Documents/GitHub/ece3829_lab2/ece3829_lab2.srcs/constrs_1/imports/new/seven_seg.xdc:152]
+WARNING: [Vivado 12-584] No ports matched 'JC[4]'. [C:/Users/alyss/Documents/GitHub/ece3829_lab2/ece3829_lab2.srcs/constrs_1/imports/new/seven_seg.xdc:160]
+WARNING: [Vivado 12-584] No ports matched 'JC[4]'. [C:/Users/alyss/Documents/GitHub/ece3829_lab2/ece3829_lab2.srcs/constrs_1/imports/new/seven_seg.xdc:161]
+WARNING: [Vivado 12-584] No ports matched 'JC[5]'. [C:/Users/alyss/Documents/GitHub/ece3829_lab2/ece3829_lab2.srcs/constrs_1/imports/new/seven_seg.xdc:163]
+WARNING: [Vivado 12-584] No ports matched 'JC[5]'. [C:/Users/alyss/Documents/GitHub/ece3829_lab2/ece3829_lab2.srcs/constrs_1/imports/new/seven_seg.xdc:164]
+WARNING: [Vivado 12-584] No ports matched 'JC[6]'. [C:/Users/alyss/Documents/GitHub/ece3829_lab2/ece3829_lab2.srcs/constrs_1/imports/new/seven_seg.xdc:166]
+WARNING: [Vivado 12-584] No ports matched 'JC[6]'. [C:/Users/alyss/Documents/GitHub/ece3829_lab2/ece3829_lab2.srcs/constrs_1/imports/new/seven_seg.xdc:167]
+WARNING: [Vivado 12-584] No ports matched 'JC[7]'. [C:/Users/alyss/Documents/GitHub/ece3829_lab2/ece3829_lab2.srcs/constrs_1/imports/new/seven_seg.xdc:169]
+WARNING: [Vivado 12-584] No ports matched 'JC[7]'. [C:/Users/alyss/Documents/GitHub/ece3829_lab2/ece3829_lab2.srcs/constrs_1/imports/new/seven_seg.xdc:170]
+Finished Parsing XDC File [C:/Users/alyss/Documents/GitHub/ece3829_lab2/ece3829_lab2.srcs/constrs_1/imports/new/seven_seg.xdc]
+WARNING: [Project 1-498] One or more constraints failed evaluation while reading constraint file [C:/Users/alyss/Documents/GitHub/ece3829_lab2/ece3829_lab2.srcs/constrs_1/imports/new/seven_seg.xdc] and the design contains unresolved black boxes. These constraints will be read post-synthesis (as long as their source constraint file is marked as used_in_implementation) and should be applied correctly then. You should review the constraints listed in the file [.Xil/lab2_top_propImpl.xdc] and check the run log file to verify that these constraints were correctly applied.
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/alyss/Documents/GitHub/ece3829_lab2/ece3829_lab2.srcs/constrs_1/imports/new/seven_seg.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/lab2_top_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/lab2_top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1020.941 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.009 . Memory (MB): peak = 1020.941 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 1020.941 ; gain = 409.281
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tcpg236-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 1020.941 ; gain = 409.281
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property IO_BUFFER_TYPE = NONE for clk. (constraint file  c:/Users/alyss/Documents/GitHub/ece3829_lab2/ece3829_lab2.srcs/sources_1/ip/clk_wiz_0_1/clk_wiz_0/clk_wiz_0_in_context.xdc, line 3).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for clk. (constraint file  c:/Users/alyss/Documents/GitHub/ece3829_lab2/ece3829_lab2.srcs/sources_1/ip/clk_wiz_0_1/clk_wiz_0/clk_wiz_0_in_context.xdc, line 4).
+Applied set_property DONT_TOUCH = true for mmcm_inst. (constraint file  auto generated constraint, line ).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 1020.941 ; gain = 409.281
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:19 ; elapsed = 00:00:19 . Memory (MB): peak = 1020.941 ; gain = 409.281
+---------------------------------------------------------------------------------
+INFO: [Synth 8-223] decloning instance 'u0' (slowclock) to 'u3'
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+	   2 Input     11 Bit       Adders := 2     
+	   2 Input      7 Bit       Adders := 1     
+	   2 Input      2 Bit       Adders := 1     
++---Registers : 
+	               15 Bit    Registers := 1     
+	               11 Bit    Registers := 2     
+	                8 Bit    Registers := 1     
+	                7 Bit    Registers := 1     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 5     
++---Muxes : 
+	   4 Input      4 Bit        Muxes := 2     
+	   5 Input      4 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 1     
+	   7 Input      4 Bit        Muxes := 1     
+	   6 Input      4 Bit        Muxes := 1     
+	   5 Input      3 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 2     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module slowclock 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
++---Registers : 
+	                1 Bit    Registers := 1     
+Module my_counter 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      2 Bit       Adders := 1     
++---Registers : 
+	                2 Bit    Registers := 1     
+Module decoder2to4 
+Detailed RTL Component Info : 
++---Muxes : 
+	   4 Input      4 Bit        Muxes := 1     
+Module seven_seg 
+Detailed RTL Component Info : 
++---Muxes : 
+	   4 Input      4 Bit        Muxes := 1     
+Module vga_controller_640_60 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     11 Bit       Adders := 2     
++---Registers : 
+	               11 Bit    Registers := 2     
+	                1 Bit    Registers := 3     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 2     
+Module vhdl_display 
+Detailed RTL Component Info : 
++---Muxes : 
+	   5 Input      4 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 1     
+	   7 Input      4 Bit        Muxes := 1     
+	   6 Input      4 Bit        Muxes := 1     
+	   5 Input      3 Bit        Muxes := 1     
+Module adc_sclk 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      7 Bit       Adders := 1     
++---Registers : 
+	                7 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
+Module shift_register 
+Detailed RTL Component Info : 
++---Registers : 
+	               15 Bit    Registers := 1     
+	                8 Bit    Registers := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+WARNING: [Synth 8-3331] design lab2_top has unconnected port cs
+WARNING: [Synth 8-3331] design lab2_top has unconnected port sdo
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u0/clk_out_reg )
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 1020.941 ; gain = 409.281
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:34 ; elapsed = 00:00:35 . Memory (MB): peak = 1020.941 ; gain = 409.281
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:34 ; elapsed = 00:00:35 . Memory (MB): peak = 1021.820 ; gain = 410.160
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:35 ; elapsed = 00:00:35 . Memory (MB): peak = 1027.258 ; gain = 415.598
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:40 ; elapsed = 00:00:40 . Memory (MB): peak = 1033.047 ; gain = 421.387
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:40 ; elapsed = 00:00:40 . Memory (MB): peak = 1033.047 ; gain = 421.387
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:40 ; elapsed = 00:00:40 . Memory (MB): peak = 1033.047 ; gain = 421.387
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:40 ; elapsed = 00:00:40 . Memory (MB): peak = 1033.047 ; gain = 421.387
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:40 ; elapsed = 00:00:40 . Memory (MB): peak = 1033.047 ; gain = 421.387
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:40 ; elapsed = 00:00:40 . Memory (MB): peak = 1033.047 ; gain = 421.387
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+--------------+----------+
+|      |BlackBox name |Instances |
++------+--------------+----------+
+|1     |clk_wiz_0     |         1|
++------+--------------+----------+
+
+Report Cell Usage: 
++------+----------+------+
+|      |Cell      |Count |
++------+----------+------+
+|1     |clk_wiz_0 |     1|
+|2     |CARRY4    |     8|
+|3     |LUT1      |     4|
+|4     |LUT2      |    26|
+|5     |LUT3      |     9|
+|6     |LUT4      |    18|
+|7     |LUT5      |    13|
+|8     |LUT6      |    18|
+|9     |FDCE      |     8|
+|10    |FDRE      |    25|
+|11    |IBUF      |     5|
+|12    |OBUF      |    26|
+|13    |OBUFT     |     1|
++------+----------+------+
+
+Report Instance Areas: 
++------+------------+----------------------+------+
+|      |Instance    |Module                |Cells |
++------+------------+----------------------+------+
+|1     |top         |                      |   163|
+|2     |  D1        |vhdl_display          |   104|
+|3     |    display |vga_controller_640_60 |    90|
+|4     |  u2        |adc_sclk              |    18|
++------+------------+----------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:40 ; elapsed = 00:00:40 . Memory (MB): peak = 1033.047 ; gain = 421.387
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 2 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:27 ; elapsed = 00:00:38 . Memory (MB): peak = 1033.047 ; gain = 319.727
+Synthesis Optimization Complete : Time (s): cpu = 00:00:40 ; elapsed = 00:00:41 . Memory (MB): peak = 1033.047 ; gain = 421.387
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1043.816 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 8 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1043.816 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+36 Infos, 31 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:48 ; elapsed = 00:00:50 . Memory (MB): peak = 1043.816 ; gain = 704.902
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1043.816 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'C:/Users/alyss/Documents/GitHub/ece3829_lab2/ece3829_lab2.runs/synth_1/lab2_top.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file lab2_top_utilization_synth.rpt -pb lab2_top_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Sat Feb  1 17:50:15 2020...
