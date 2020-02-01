@@ -1,0 +1,23 @@
+#-----------------------------------------------------------
+# Vivado v2019.2 (64-bit)
+# SW Build 2700185 on Thu Oct 24 18:46:05 MDT 2019
+# IP Build 2699827 on Thu Oct 24 21:16:38 MDT 2019
+# Start of session at: Sat Feb  1 15:35:43 2020
+# Process ID: 25092
+# Current directory: C:/Users/Jeffrey Huang/Documents/WPI/2019-2020/C term/ECE3829/ece3829_lab2
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent13760 C:\Users\Jeffrey Huang\Documents\WPI\2019-2020\C term\ECE3829\ece3829_lab2\ece3829_lab2.xpr
+# Log file: C:/Users/Jeffrey Huang/Documents/WPI/2019-2020/C term/ECE3829/ece3829_lab2/vivado.log
+# Journal file: C:/Users/Jeffrey Huang/Documents/WPI/2019-2020/C term/ECE3829/ece3829_lab2\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {C:/Users/Jeffrey Huang/Documents/WPI/2019-2020/C term/ECE3829/ece3829_lab2/ece3829_lab2.xpr}
+INFO: [Project 1-313] Project file moved from 'C:/Users/alyss/Documents/GitHub/ece3829_lab2' since last save.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2019.2/data/ip'.
+open_project: Time (s): cpu = 00:00:18 ; elapsed = 00:00:11 . Memory (MB): peak = 885.977 ; gain = 237.246
+update_compile_order -fileset sources_1
+exit
+INFO: [Common 17-206] Exiting Vivado at Sat Feb  1 15:47:13 2020...

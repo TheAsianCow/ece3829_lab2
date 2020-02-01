@@ -24,13 +24,16 @@ module lab2_top(
     input [15:0]sw,
     input clk,
     input reset,
+    input sdo,
     output [6:0] seg,
     output [3:0] an,
     output Hsync,
     output Vsync,
     output [3:0] vgaRed,
     output [3:0] vgaGreen,
-    output [3:0] vgaBlue
+    output [3:0] vgaBlue, 
+    output sclk,
+    output cs
     );
     
     wire clk_out;
@@ -40,6 +43,7 @@ module lab2_top(
 //    wire [10:0] y;
 //    wire blank;
     
+    wire [8:0]lightdata;
     
     clk_wiz_0 mmcm_inst(
     // Clock out ports
@@ -55,4 +59,7 @@ module lab2_top(
     seven_seg u1(sw,slowclk,seg,an);
     
     vhdl_display D1(sw, clk_out, reset, Hsync, Vsync, vgaRed, vgaGreen, vgaBlue);
+    
+    adc_sclk u2(.clk_in(clk_out),.reset(reset),.clk_out(sclk));
+    
 endmodule
