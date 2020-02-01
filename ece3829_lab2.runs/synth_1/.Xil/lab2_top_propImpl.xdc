@@ -1,4 +1,4 @@
-set_property SRC_FILE_INFO {cfile:{C:/Users/Jeffrey Huang/Documents/WPI/2019-2020/C term/ECE3829/ece3829_lab2/ece3829_lab2.srcs/constrs_1/imports/new/seven_seg.xdc} rfile:../../../ece3829_lab2.srcs/constrs_1/imports/new/seven_seg.xdc id:1} [current_design]
+set_property SRC_FILE_INFO {cfile:C:/Users/alyss/Documents/GitHub/ece3829_lab2/ece3829_lab2.srcs/constrs_1/imports/new/seven_seg.xdc rfile:../../../ece3829_lab2.srcs/constrs_1/imports/new/seven_seg.xdc id:1} [current_design]
 set_property src_info {type:XDC file:1 line:7 export:INPUT save:INPUT read:READ} [current_design]
 set_property PACKAGE_PIN W5 [get_ports clk]
 set_property src_info {type:XDC file:1 line:12 export:INPUT save:INPUT read:READ} [current_design]

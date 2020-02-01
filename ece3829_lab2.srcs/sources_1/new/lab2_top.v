@@ -28,17 +28,17 @@ module lab2_top(
     output [3:0] an,
     output Hsync,
     output Vsync,
-    output reg [3:0] vgaRed,
-    output reg [3:0] vgaBlue,
-    output reg [3:0] vgaGreen
+    output [3:0] vgaRed,
+    output [3:0] vgaGreen,
+    output [3:0] vgaBlue
     );
     
     wire clk_out;
     wire slowclk;
-    wire led;
-    wire [10:0] x;
-    wire [10:0] y;
-    wire blank;
+//    wire led;
+//    wire [10:0] x;
+//    wire [10:0] y;
+//    wire blank;
     
     
     clk_wiz_0 mmcm_inst(
@@ -54,29 +54,5 @@ module lab2_top(
     slowclock u0(clk, slowclk);
     seven_seg u1(sw,slowclk,seg,an);
     
-    //vga stuff
-    vga_controller_640_60 display(
-        .rst(reset), 
-        .pixel_clk(clk_out),
-        .HS(Hsync),
-        .VS(Vsync),
-        .hcount(y),
-        .vcount(x),
-        .blank(blank)
-    );
-    always @(*)begin
-    if(blank)
-    begin
-        vgaRed = 4'b0000;
-        vgaBlue = 4'b0000;
-        vgaGreen = 4'b0000;
-    end
-        
-    else 
-    begin
-        vgaRed = 4'b0000;
-        vgaBlue = 4'b1111;
-        vgaGreen = 4'b0000;
-    end
-    end
+    vhdl_display D1(sw, clk_out, reset, Hsync, Vsync, vgaRed, vgaGreen, vgaBlue);
 endmodule
