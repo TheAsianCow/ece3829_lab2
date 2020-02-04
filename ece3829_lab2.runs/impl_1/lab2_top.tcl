@@ -65,19 +65,19 @@ start_step init_design
 set ACTIVE_STEP init_design
 set rc [catch {
   create_msg_db init_design.pb
-  set_param chipscope.maxJobs 1
+  set_param chipscope.maxJobs 2
   set_param xicom.use_bs_reader 1
   create_project -in_memory -part xc7a35tcpg236-1
   set_property design_mode GateLvl [current_fileset]
   set_param project.singleFileAddWarning.threshold 0
-  set_property webtalk.parent_dir C:/Users/alyss/Documents/GitHub/ece3829_lab2/ece3829_lab2.cache/wt [current_project]
-  set_property parent.project_path C:/Users/alyss/Documents/GitHub/ece3829_lab2/ece3829_lab2.xpr [current_project]
-  set_property ip_output_repo C:/Users/alyss/Documents/GitHub/ece3829_lab2/ece3829_lab2.cache/ip [current_project]
+  set_property webtalk.parent_dir {C:/Users/Jeffrey Huang/Documents/WPI/2019-2020/C term/ECE3829/ece3829_lab2/ece3829_lab2.cache/wt} [current_project]
+  set_property parent.project_path {C:/Users/Jeffrey Huang/Documents/WPI/2019-2020/C term/ECE3829/ece3829_lab2/ece3829_lab2.xpr} [current_project]
+  set_property ip_output_repo {{C:/Users/Jeffrey Huang/Documents/WPI/2019-2020/C term/ECE3829/ece3829_lab2/ece3829_lab2.cache/ip}} [current_project]
   set_property ip_cache_permissions {read write} [current_project]
   set_property XPM_LIBRARIES XPM_CDC [current_project]
-  add_files -quiet C:/Users/alyss/Documents/GitHub/ece3829_lab2/ece3829_lab2.runs/synth_1/lab2_top.dcp
-  read_ip -quiet C:/Users/alyss/Documents/GitHub/ece3829_lab2/ece3829_lab2.srcs/sources_1/ip/clk_wiz_0_1/clk_wiz_0.xci
-  read_xdc C:/Users/alyss/Documents/GitHub/ece3829_lab2/ece3829_lab2.srcs/constrs_1/imports/new/seven_seg.xdc
+  add_files -quiet {{C:/Users/Jeffrey Huang/Documents/WPI/2019-2020/C term/ECE3829/ece3829_lab2/ece3829_lab2.runs/synth_1/lab2_top.dcp}}
+  read_ip -quiet {{C:/Users/Jeffrey Huang/Documents/WPI/2019-2020/C term/ECE3829/ece3829_lab2/ece3829_lab2.srcs/sources_1/ip/clk_wiz_0_1/clk_wiz_0.xci}}
+  read_xdc {{C:/Users/Jeffrey Huang/Documents/WPI/2019-2020/C term/ECE3829/ece3829_lab2/ece3829_lab2.srcs/constrs_1/imports/new/seven_seg.xdc}}
   link_design -top lab2_top -part xc7a35tcpg236-1
   close_msg_db -file init_design.pb
 } RESULT]

@@ -22,15 +22,27 @@
 
 module shift_register(
     input clk,
+    input data_cap,
     input sdo,
-    output reg [8:0] lightdata
+    output reg [7:0] lightdata,
+    output reg cs
     );
     
     reg [14:0] data = 15'b0;
+    reg [3:0] cnt = 4'b0000;
     
-    always @ (posedge clk)
-        if (data[14:12] == 3'b0 && data[3:0] == 4'b0) 
-            lightdata = data [11:4];
-        else
-            data <= {data[13:0] , sdo};
+    always @ (posedge clk)begin
+//        if(data_cap)begin
+            if(data[14:12] == 3'b0 && data[3:0] == 4'b0) lightdata = data [11:4];
+            else data <= {data[13:0] , sdo};
+            if(cnt<15)begin
+                cnt <= cnt+1'b1;
+                cs <= 1'b0;
+            end
+            else begin
+                cs <= 1'b1;
+                cnt <= 1'b0;
+            end
+//        end
+    end
 endmodule

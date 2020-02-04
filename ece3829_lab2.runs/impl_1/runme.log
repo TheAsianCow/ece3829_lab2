@@ -1,14 +1,13 @@
-#-----------------------------------------------------------
-# Vivado v2019.2 (64-bit)
-# SW Build 2700185 on Thu Oct 24 18:46:05 MDT 2019
-# IP Build 2699827 on Thu Oct 24 21:16:38 MDT 2019
-# Start of session at: Tue Feb  4 15:40:13 2020
-# Process ID: 6256
-# Current directory: C:/Users/Jeffrey Huang/Documents/WPI/2019-2020/C term/ECE3829/ece3829_lab2/ece3829_lab2.runs/impl_1
-# Command line: vivado.exe -log lab2_top.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source lab2_top.tcl -notrace
-# Log file: C:/Users/Jeffrey Huang/Documents/WPI/2019-2020/C term/ECE3829/ece3829_lab2/ece3829_lab2.runs/impl_1/lab2_top.vdi
-# Journal file: C:/Users/Jeffrey Huang/Documents/WPI/2019-2020/C term/ECE3829/ece3829_lab2/ece3829_lab2.runs/impl_1\vivado.jou
-#-----------------------------------------------------------
+
+*** Running vivado
+    with args -log lab2_top.vdi -applog -m64 -product Vivado -messageDb vivado.pb -mode batch -source lab2_top.tcl -notrace
+
+
+****** Vivado v2019.2 (64-bit)
+  **** SW Build 2700185 on Thu Oct 24 18:46:05 MDT 2019
+  **** IP Build 2699827 on Thu Oct 24 21:16:38 MDT 2019
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
 source lab2_top.tcl -notrace
 Command: link_design -top lab2_top -part xc7a35tcpg236-1
 Design is defaulting to srcset: sources_1
@@ -599,6 +598,8 @@ Creating bitstream...
 Writing bitstream ./lab2_top.bit...
 INFO: [Vivado 12-1842] Bitgen Completed Successfully.
 INFO: [Project 1-120] WebTalk data collection is mandatory when using a WebPACK part without a full Vivado license. To see the specific WebTalk data collected for your design, open the usage_statistics_webtalk.html or usage_statistics_webtalk.xml file in the implementation directory.
+Access is denied.
+Access is denied.
 INFO: [Common 17-83] Releasing license: Implementation
 117 Infos, 3 Warnings, 0 Critical Warnings and 0 Errors encountered.
 write_bitstream completed successfully

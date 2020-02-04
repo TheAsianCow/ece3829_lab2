@@ -3,7 +3,7 @@
 <!--                                                         -->
 <!-- Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.   -->
 
-<Project Version="7" Minor="44" Path="C:/Users/alyss/Documents/GitHub/ece3829_lab2/ece3829_lab2.xpr">
+<Project Version="7" Minor="44" Path="C:/Users/Jeffrey Huang/Documents/WPI/2019-2020/C term/ECE3829/ece3829_lab2/ece3829_lab2.xpr">
   <DefaultLaunch Dir="$PRUNDIR"/>
   <Configuration>
     <Option Name="Id" Val="c6ae2124e8764ed2bc5d744416c669fe"/>
@@ -69,6 +69,15 @@
         <FileInfo>
           <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../ece3829_lab1/ece3829_lab1.srcs/sources_1/imports/new/bcd7seg.v"/>
           <Attr Name="ImportTime" Val="1574280732"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/new/data_clk.v">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../ece3829_lab2_old/ece3829_lab2.srcs/sources_1/new/data_clk.v"/>
+          <Attr Name="ImportTime" Val="1580845002"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
