@@ -499,3 +499,125 @@ closeTask("Program and Debug", "Hardware Manager", "DesignTask.PROGRAM_DEBUG");
 // Tcl Message: close_hw_manager 
 dismissDialog("Close Hardware Manager"); // bB (cr)
 // [GUI Memory]: 133 MB (+1797kb) [00:17:57]
+// Elapsed time: 174 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "data_clk.v", 4); // i (h, cr)
+// Elapsed time: 16 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "shift_register.v", 3); // i (h, cr)
+selectCodeEditor("shift_register.v", 117, 198); // ch (w, cr)
+// Elapsed time: 338 seconds
+selectCodeEditor("shift_register.v", 256, 140); // ch (w, cr)
+// Elapsed time: 29 seconds
+selectCodeEditor("shift_register.v", 90, 214); // ch (w, cr)
+selectCodeEditor("shift_register.v", 90, 214, false, false, false, false, true); // ch (w, cr) - Double Click
+selectCodeEditor("shift_register.v", 88, 399); // ch (w, cr)
+selectCodeEditor("shift_register.v", 162, 213); // ch (w, cr)
+selectCodeEditor("shift_register.v", 211, 166); // ch (w, cr)
+// Elapsed time: 18 seconds
+selectCodeEditor("shift_register.v", 101, 211); // ch (w, cr)
+selectCodeEditor("shift_register.v", 101, 211, false, false, false, false, true); // ch (w, cr) - Double Click
+// Elapsed time: 21 seconds
+selectCodeEditor("shift_register.v", 193, 164); // ch (w, cr)
+// Elapsed time: 29 seconds
+selectCodeEditor("shift_register.v", 120, 178); // ch (w, cr)
+// Elapsed time: 35 seconds
+selectCodeEditor("shift_register.v", 240, 177); // ch (w, cr)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 36 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "lab2_top.v", 1); // i (h, cr)
+// Elapsed time: 30 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "data_clk.v", 4); // i (h, cr)
+selectCodeEditor("data_clk.v", 152, 197); // ch (w, cr)
+// Elapsed time: 14 seconds
+selectCodeEditor("data_clk.v", 162, 199); // ch (w, cr)
+// Elapsed time: 42 seconds
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+// Elapsed time: 11 seconds
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+// Elapsed time: 22 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "lab2_top.v", 1); // i (h, cr)
+selectCodeEditor("lab2_top.v", 241, 369); // ch (w, cr)
+// Elapsed time: 173 seconds
+selectCodeEditor("lab2_top.v", 362, 368); // ch (w, cr)
+selectCodeEditor("lab2_top.v", 370, 210); // ch (w, cr)
+selectCodeEditor("lab2_top.v", 370, 210, false, false, false, false, true); // ch (w, cr) - Double Click
+selectCodeEditor("lab2_top.v", 370, 210); // ch (w, cr)
+selectCodeEditor("lab2_top.v", 370, 210); // ch (w, cr)
+selectCodeEditor("lab2_top.v", 369, 211); // ch (w, cr)
+selectCodeEditor("lab2_top.v", 270, 370); // ch (w, cr)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "data_clk.v", 4); // i (h, cr)
+// Elapsed time: 10 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "slowclock.v", 2); // i (h, cr)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "lab2_top.v", 1); // i (h, cr)
+// Elapsed time: 54 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "shift_register.v", 3); // i (h, cr)
+// Elapsed time: 165 seconds
+selectCodeEditor("shift_register.v", 101, 217); // ch (w, cr)
+selectCodeEditor("shift_register.v", 93, 401); // ch (w, cr)
+// HMemoryUtils.trashcanNow. Engine heap size: 2,203 MB. GUI used memory: 68 MB. Current time: 2/4/20, 4:05:39 PM EST
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 140 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "lab2_top.v", 1); // i (h, cr)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "shift_register.v", 3); // i (h, cr)
+selectCodeEditor("shift_register.v", 199, 156); // ch (w, cr)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("shift_register.v", 218, 192); // ch (w, cr)
+selectCodeEditor("shift_register.v", 150, 364); // ch (w, cr)
+selectCodeEditor("shift_register.v", 144, 196, true, false, false, false, false); // ch (w, cr) - Shift Key
+selectCodeEditor("shift_register.v", 69, 209); // ch (w, cr)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "lab2_top.v", 1); // i (h, cr)
+selectCodeEditor("lab2_top.v", 29, 386); // ch (w, cr)
+// Elapsed time: 49 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "shift_register.v", 3); // i (h, cr)
+selectCodeEditor("shift_register.v", 146, 110); // ch (w, cr)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "lab2_top.v", 1); // i (h, cr)
+selectCodeEditor("lab2_top.v", 257, 385); // ch (w, cr)
+selectCodeEditor("lab2_top.v", 230, 362); // ch (w, cr)
+// Elapsed time: 40 seconds
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "data_clk.v", 4); // i (h, cr)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "shift_register.v", 3); // i (h, cr)
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+// Elapsed time: 10 seconds
+selectCodeEditor("shift_register.v", 235, 212); // ch (w, cr)
+// Elapsed time: 39 seconds
+selectCodeEditor("shift_register.v", 32, 180); // ch (w, cr)
+selectCodeEditor("shift_register.v", 32, 180, false, false, false, false, true); // ch (w, cr) - Double Click
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("shift_register.v", 199, 400); // ch (w, cr)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
