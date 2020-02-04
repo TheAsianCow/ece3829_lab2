@@ -52,7 +52,7 @@ module lab2_top(
     
     //displaying seven seg
     slowclock u0(clk,seven_seg_clk);
-    seven_seg u1(sw,seven_seg_clk,seg,an);
+    
     
     vhdl_display D1(sw, clk_out, reset, Hsync, Vsync, vgaRed, vgaGreen, vgaBlue);
     
@@ -60,4 +60,5 @@ module lab2_top(
     data_clk u3(clk, data_clk);
     shift_register u4(sclk, data_clk, sdo, light_data, cs);
     
+    seven_seg u1(light_data,seven_seg_clk,seg,an);
 endmodule

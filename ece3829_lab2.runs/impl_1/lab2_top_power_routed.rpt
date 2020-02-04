@@ -1,8 +1,8 @@
 Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------------------------------------------------------------------
-| Tool Version     : Vivado v.2019.2 (win64) Build 2700185 Thu Oct 24 18:46:05 MDT 2019
-| Date             : Tue Feb  4 15:41:17 2020
-| Host             : WIN-0JR3P7S3KIR running 64-bit major release  (build 9200)
+| Tool Version     : Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
+| Date             : Tue Feb  4 16:07:36 2020
+| Host             : ALYSSAUNGERER running 64-bit major release  (build 9200)
 | Command          : report_power -file lab2_top_power_routed.rpt -pb lab2_top_power_summary_routed.pb -rpx lab2_top_power_routed.rpx
 | Design           : lab2_top
 | Device           : xc7a35tcpg236-1
@@ -30,10 +30,10 @@ Table of Contents
 ----------
 
 +--------------------------+--------------+
-| Total On-Chip Power (W)  | 0.220        |
+| Total On-Chip Power (W)  | 0.217        |
 | Design Power Budget (W)  | Unspecified* |
 | Power Budget Margin (W)  | NA           |
-| Dynamic (W)              | 0.148        |
+| Dynamic (W)              | 0.145        |
 | Device Static (W)        | 0.072        |
 | Effective TJA (C/W)      | 5.0          |
 | Max Ambient (C)          | 83.9         |
@@ -49,21 +49,22 @@ Table of Contents
 1.1 On-Chip Components
 ----------------------
 
-+----------------+-----------+----------+-----------+-----------------+
-| On-Chip        | Power (W) | Used     | Available | Utilization (%) |
-+----------------+-----------+----------+-----------+-----------------+
-| Clocks         |    <0.001 |        6 |       --- |             --- |
-| Slice Logic    |    <0.001 |      205 |       --- |             --- |
-|   LUT as Logic |    <0.001 |       89 |     20800 |            0.43 |
-|   Register     |    <0.001 |       63 |     41600 |            0.15 |
-|   CARRY4       |    <0.001 |       14 |      8150 |            0.17 |
-|   Others       |     0.000 |       12 |       --- |             --- |
-| Signals        |    <0.001 |      171 |       --- |             --- |
-| MMCM           |     0.116 |        1 |         5 |           20.00 |
-| I/O            |     0.030 |       45 |       106 |           42.45 |
-| Static Power   |     0.072 |          |           |                 |
-| Total          |     0.220 |          |           |                 |
-+----------------+-----------+----------+-----------+-----------------+
++-------------------------+-----------+----------+-----------+-----------------+
+| On-Chip                 | Power (W) | Used     | Available | Utilization (%) |
++-------------------------+-----------+----------+-----------+-----------------+
+| Clocks                  |    <0.001 |        6 |       --- |             --- |
+| Slice Logic             |    <0.001 |      219 |       --- |             --- |
+|   LUT as Logic          |    <0.001 |       86 |     20800 |            0.41 |
+|   Register              |    <0.001 |       80 |     41600 |            0.19 |
+|   CARRY4                |    <0.001 |       14 |      8150 |            0.17 |
+|   LUT as Shift Register |    <0.001 |        1 |      9600 |            0.01 |
+|   Others                |     0.000 |       13 |       --- |             --- |
+| Signals                 |    <0.001 |      172 |       --- |             --- |
+| MMCM                    |     0.116 |        1 |         5 |           20.00 |
+| I/O                     |     0.028 |       34 |       106 |           32.08 |
+| Static Power            |     0.072 |          |           |                 |
+| Total                   |     0.217 |          |           |                 |
++-------------------------+-----------+----------+-----------+-----------------+
 
 
 1.2 Power Supply Summary
@@ -74,7 +75,7 @@ Table of Contents
 +-----------+-------------+-----------+-------------+------------+
 | Vccint    |       1.000 |     0.012 |       0.002 |      0.010 |
 | Vccaux    |       1.800 |     0.078 |       0.065 |      0.013 |
-| Vcco33    |       3.300 |     0.010 |       0.009 |      0.001 |
+| Vcco33    |       3.300 |     0.009 |       0.008 |      0.001 |
 | Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |
 | Vcco18    |       1.800 |     0.000 |       0.000 |      0.000 |
 | Vcco15    |       1.500 |     0.000 |       0.000 |      0.000 |
@@ -95,7 +96,7 @@ Table of Contents
 | User Input Data             | Confidence | Details                                                | Action                                                                                                             |
 +-----------------------------+------------+--------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------+
 | Design implementation state | High       | Design is routed                                       |                                                                                                                    |
-| Clock nodes activity        | Medium     | More than 5% of clocks are missing user specification  | Provide missing clock activity with a constraint file, simulation results or by editing the "By Clock Domain" view |
+| Clock nodes activity        | Low        | User specified less than 75% of clocks                 | Provide missing clock activity with a constraint file, simulation results or by editing the "By Clock Domain" view |
 | I/O nodes activity          | Low        | More than 75% of inputs are missing user specification | Provide missing input activity with simulation results or by editing the "By Resource Type -> I/Os" view           |
 | Internal nodes activity     | Medium     | User specified less than 25% of internal nodes         | Provide missing internal nodes activity with simulation results or by editing the "By Resource Type" views         |
 | Device models               | High       | Device models are Production                           |                                                                                                                    |
@@ -144,7 +145,7 @@ Table of Contents
 +-------------+-----------+
 | Name        | Power (W) |
 +-------------+-----------+
-| lab2_top    |     0.148 |
+| lab2_top    |     0.145 |
 |   mmcm_inst |     0.116 |
 |     inst    |     0.116 |
 +-------------+-----------+
