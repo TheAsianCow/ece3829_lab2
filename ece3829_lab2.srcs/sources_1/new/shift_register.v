@@ -23,7 +23,7 @@
 module shift_register(
     input clk,
     input sdo,
-    output reg [7:0] lightdata
+    output reg [8:0] lightdata
     );
     
     reg [14:0] data = 15'b0;
